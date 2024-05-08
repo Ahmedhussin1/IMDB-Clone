@@ -4,6 +4,7 @@ import { useSearchParams } from "next/navigation";
 function NavbarItems({ title, params }) {
   const searchParams = useSearchParams();
   const genre = searchParams.get("genre");
+  console.log(genre);
   return (
     <div
       className={`hover:text-amber-600 font-bold ${
