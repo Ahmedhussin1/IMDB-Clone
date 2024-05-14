@@ -15,11 +15,11 @@ function Card({ result }) {
           alt="img"
           className="sm:rounded-t-lg group-hover:opacity-75 duration-300"
         ></Image>
-        <div className="p-2">
-          <p className="line-clamp-3 text-md">{result.overview}</p>
+        <div className="py-5 px-5 flex flex-col gap-3">
           <h2 className="text-lg font-bold truncate">
             {result.title || result.name}
           </h2>
+          <p className="line-clamp-3 text-md">{result.overview}</p>
           <p className="flex items-center">
             {result.release_date || result.first_air_date}
             <FiThumbsUp className="h-5 mr-1 ml-3"/>
